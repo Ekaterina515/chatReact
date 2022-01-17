@@ -1,0 +1,10 @@
+.reset {
+  background-color: transparent;
+  border: none;
+}
+.alert {
+  background-color: tomato;
+}
+.primary {
+  background-color: turquoise;
+}
