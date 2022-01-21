@@ -1,2 +1,2 @@
-export * from "./Button";
-export * from "./Message";
+export * from "./message-list";
+export * from "./message-list/Message";

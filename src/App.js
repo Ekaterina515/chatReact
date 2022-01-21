@@ -1,11 +1,13 @@
 import "./App.css";
-import { Message } from "./components";
+import "./components";
+import { MessageList } from "./components";
+import "./palette.css";
 
 function App() {
   return (
     <div>
-      <h1> The Chat </h1>
-      <Message messageProps={Message} />
+      <h1>The Chat</h1>
+      <MessageList />
     </div>
   );
 }
