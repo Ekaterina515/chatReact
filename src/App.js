@@ -1,21 +1,13 @@
 import "./App.css";
-import { Button } from "./components";
+import "./components";
+import { MessageList } from "./components";
+import "./palette.css";
 
 function App() {
   return (
-    <div className="App">
-      <Button></Button>
-
-      <Button color="alert" />
-      <Button disabled={false} />
-      <Button disabled={true} />
-      <Button disabled />
-      <Button
-        color="primary"
-        onClick={() => {
-          console.log("click");
-        }}
-      />
+    <div>
+      <h1>The Chat</h1>
+      <MessageList />
     </div>
   );
 }
