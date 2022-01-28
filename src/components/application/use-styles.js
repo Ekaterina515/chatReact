@@ -8,7 +8,7 @@ export const useStyles = makeStyles((ctx) => {
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      height: "94vh",
+      height: "100vh",
     },
   };
 });

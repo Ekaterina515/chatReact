@@ -1,4 +1,4 @@
-export * from "./application/message-list";
-export * from "./application/message";
-export * from "./application/chat-bar";
 export * from "./application";
+export * from "./chat-bar";
+export * from "./message-list";
+export * from "./home";

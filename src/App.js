@@ -1,7 +1,8 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { Application } from "./components";
-// import { Palette } from "@mui/icons-material";
+import { ChatPage, HomePage, ProfilePage } from "./pages";
+import "./common.module.css";
 
 const theme = createTheme({
   palette: {
@@ -15,17 +16,26 @@ const theme = createTheme({
       radius: "10px",
     },
     text: {
-      main: "#172c66",
+      main: "#fff",
       secondary: "#001858",
+      heading: "rgba(31, 38, 135, 0.37)",
     },
   },
 });
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Application />
-    </ThemeProvider>
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="//*" element={<HomePage />} />;
+            <Route path="/chat/*" element={<ChatPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </React.StrictMode>
   );
 }
 
