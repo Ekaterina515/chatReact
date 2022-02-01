@@ -40,11 +40,7 @@ export const ChatBar = ({ title, selected, handleListItemClick, setChats }) => {
 export const ChatList = () => {
   const styles = useStyles();
   const { roomId } = useParams();
-  const [chats, setChats] = useState([
-    "room1",
-    "room2",
-    "room3",
-  ]);
+  const [chats, setChats] = useState(["room1", "room2", "room3"]);
   const handleAddChat = () => {
     const lastID = parseInt(chats[chats.length - 1].split("room")[1]);
     setChats([...chats, "room" + (lastID + 1)]);
@@ -74,5 +70,5 @@ export const ChatList = () => {
 
 export const ChatText = () => {
   const styles = useStyles();
-  return <h1 className={styles.chatText}>Pick the room...</h1>;
+  return <h1 className={styles.chatText}>CHOOSE THE ROOM</h1>;
 };

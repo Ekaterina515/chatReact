@@ -5,13 +5,9 @@ export const Home = () => {
   const styles = useStyles();
   return (
     <div className={styles.home}>
+      <h1 className={styles.heading}>HomePage</h1>
       <div className={styles.wrapper}>
         <List className={styles.list} component="nav">
-          <Link className={styles.link} to={"/"}>
-            <ListItem>
-              <p className={styles.itemText}>HomePage</p>
-            </ListItem>
-          </Link>
           <Link className={styles.link} to={"/chat"}>
             <ListItem>
               <p className={styles.itemText}>Chat</p>
@@ -23,7 +19,7 @@ export const Home = () => {
             </ListItem>
           </Link>
         </List>
-        <h1 className={styles.welcome}>Welcome to Chat</h1>
+        <h1 className={styles.welcome}>welcome</h1>
       </div>
     </div>
   );

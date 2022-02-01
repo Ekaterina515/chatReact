@@ -45,14 +45,14 @@ export const useStyles = makeStyles((ctx) => {
       textAlign: (props) => (props.author === "user" ? "right" : "justify"),
     },
     messageCartText: {
-      color: `${ctx.palette.text.main}`,
+      color: "#2F4F4F",
       fontWeight: "300",
       fontSize: "1.2rem",
       lineHeight: "125.43%",
       fontStyle: "italic",
     },
     messageCartTime: {
-      color: `${ctx.palette.secondary.light}`,
+      color: "#2F4F4F",
       fontWeight: "300",
       fontSize: "0.8rem",
       lineHeight: "125.43%",

@@ -15,18 +15,18 @@ export const useStyles = makeStyles((ctx) => {
     },
     list: {
       display: "flex",
-      justifyContent: "flex-start",
+      justifyContent: "space-around",
       alignItems: "center",
-      width: "80%",
+      width: "100%",
     },
-    // heading: {
-    //   fontWeight: "500",
-    //   textAlign: "center",
-    //   color: `${ctx.palette.text.heading}`,
-    //   textTransform: "uppercase",
-    //   fontSize: "2rem",
-    //   userSelect: "none",
-    // },
+    heading: {
+      fontWeight: "500",
+      textAlign: "center",
+      color: "#000080",
+      textTransform: "uppercase",
+      fontSize: "2rem",
+      userSelect: "none",
+    },
     link: {
       paddingTop: "1%",
       textDecoration: "none",

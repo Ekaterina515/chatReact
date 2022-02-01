@@ -5,11 +5,6 @@ export const useStyles = makeStyles((ctx) => {
     wrapper: {
       display: "flex",
       flexDirection: "column",
-      width: "100%",
-      backgroundColor: `${ctx.palette.glassmorphism.color}`,
-      boxShadow: `${ctx.palette.glassmorphism.shadow}`,
-      backdropFilter: `${ctx.palette.glassmorphism.blur}`,
-      border: `${ctx.palette.glassmorphism.border}`,
     },
     chatName: {
       color: `${ctx.palette.secondary.light}`,
@@ -38,13 +33,13 @@ export const useStyles = makeStyles((ctx) => {
       visibility: "hidden",
     },
     add: {
-      color: "gray",
-      alignSelf: "center",
+      color: "#fff",
+      alignSelf: "flex-end",
       marginRight: "0.8rem",
       cursor: "pointer",
       transition: "color 0.2s linear",
       "&:hover": {
-        color: `${ctx.palette.secondary.light}`,
+        color: "#fff",
       },
       // marginTop: "100%",
     },
