@@ -19,7 +19,7 @@ export const Home = () => {
             </ListItem>
           </Link>
         </List>
-        <h1 className={styles.welcome}>welcome</h1>
+        <h1 className={styles.welcome}>WELCOME</h1>
       </div>
     </div>
   );

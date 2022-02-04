@@ -13,7 +13,7 @@ function App() {
         <CustomThemeProvider>
           <BrowserRouter>
             <Routes>
-              <Route path="//*" element={<HomePage />} />;
+              <Route path="/*" element={<HomePage />} />;
               <Route path="/chat/*" element={<ChatPage />} />
               <Route path="/profile/*" element={<ProfilePage />} />
             </Routes>

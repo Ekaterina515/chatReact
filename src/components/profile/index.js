@@ -24,19 +24,23 @@ const ProfileInfo = ({
         <h2>{fullName}</h2>
         <h3>{sex}</h3>
         <h3>{sub}</h3>
-        <button onClick={handleUnsubmit}>Edit</button>
+        <button className={styles.customBtn} onClick={handleUnsubmit}>
+          Edit
+        </button>
       </div>
     );
   } else {
     return (
       <div className={styles.wrapper}>
         <input
+          className={styles.input}
           required
           type="text"
           onInput={handleNameValue}
           placeholder="Name"
         />
         <input
+          className={styles.input}
           required
           type="text"
           onInput={handleSurnameValue}
@@ -74,7 +78,9 @@ const ProfileInfo = ({
           <label htmlFor="radio-female">FEMALE</label>
         </div>
         <br />
-        <button onClick={handleSubmit}>SEND</button>
+        <button className={styles.customBtn} onClick={handleSubmit}>
+          SEND
+        </button>
       </div>
     );
   }

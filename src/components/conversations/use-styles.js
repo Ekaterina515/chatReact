@@ -15,12 +15,6 @@ export const useStyles = makeStyles((ctx) => {
     },
     listItem: {
       userSelect: "none",
-      "&:active svg": {
-        visibility: "visible",
-      },
-      "&:focus svg": {
-        visibility: "visible",
-      },
       "& .Mui-selected": {
         backgroundColor: `${ctx.palette.secondary.main}`,
       },
@@ -29,11 +23,10 @@ export const useStyles = makeStyles((ctx) => {
       },
     },
     delete: {
-      color: "#fff",
-      visibility: "hidden",
+      color: "gray",
     },
     add: {
-      color: "#fff",
+      color: "gray",
       alignSelf: "flex-end",
       marginRight: "0.8rem",
       cursor: "pointer",
@@ -46,7 +39,7 @@ export const useStyles = makeStyles((ctx) => {
     chatText: {
       letterSpacing: "0.025em",
       fontWeight: "600",
-      color: "#fff",
+      color: "white",
       textTransform: "capitalize",
       paddingTop: "25%",
       paddingLeft: "30%",

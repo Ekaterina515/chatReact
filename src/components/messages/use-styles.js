@@ -45,14 +45,14 @@ export const useStyles = makeStyles((ctx) => {
       textAlign: (props) => (props.author === "user" ? "right" : "justify"),
     },
     messageCartText: {
-      color: "#2F4F4F",
+      color: `${ctx.palette.text.main}`,
       fontWeight: "300",
       fontSize: "1.2rem",
       lineHeight: "125.43%",
       fontStyle: "italic",
     },
     messageCartTime: {
-      color: "#2F4F4F",
+      color: "black",
       fontWeight: "300",
       fontSize: "0.8rem",
       lineHeight: "125.43%",
@@ -99,6 +99,17 @@ export const useStyles = makeStyles((ctx) => {
       "&:hover": {
         color: "white",
       },
+    },
+    delete: {
+      color: "gray",
+      "&:hover": {
+        color: "white",
+      },
+      position: "absolute",
+      top: "5px",
+      left: (props) => (props.author !== "user" ? "" : "5px"),
+      right: (props) => (props.author !== "user" ? "5px" : ""),
+      cursor: "pointer",
     },
   };
 });
