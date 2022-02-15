@@ -3,9 +3,10 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CustomThemeProvider } from "./theme";
-import { ChatPage, HomePage, ProfilePage } from "./pages";
+import { ChatPage, HomePage, ProfilePage, Gists } from "./pages";
 import { store, persistor } from "./store";
 import "./common.module.css";
+
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/*" element={<HomePage />} />;
                 <Route path="/chat/*" element={<ChatPage />} />
                 <Route path="/profile/*" element={<ProfilePage />} />
+                <Route path="/gists" element={<Gists />} />
               </Routes>
             </BrowserRouter>
           </CustomThemeProvider>
